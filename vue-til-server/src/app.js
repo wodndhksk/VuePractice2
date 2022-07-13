@@ -22,7 +22,6 @@ mongoose.connect(
   'mongodb+srv://test:1234@cluster0.mrlrezx.mongodb.net/?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
   },
 );
 mongoose.Promise = global.Promise;
