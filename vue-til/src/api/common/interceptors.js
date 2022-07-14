@@ -6,10 +6,7 @@ export function setInterceptors(instance) {
     function(config) {
       // Do something before request is sent
       // console.log(config);
-      console.log('config 값 ', config);
       config.headers.Authorization = store.state.token;
-      console.log('토큰 확인', store.state.token);
-      console.log('인증 확인', config.headers.Authorization);
       return config;
     },
     function(error) {
