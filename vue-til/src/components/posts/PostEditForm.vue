@@ -28,6 +28,7 @@
 
 <script>
 import { fetchPost, editPost } from '@/api/posts';
+
 export default {
   data() {
     return {
@@ -61,7 +62,6 @@ export default {
     const { data } = await fetchPost(id);
     this.title = data.title;
     this.contents = data.contents;
-    console.log(data);
   },
 };
 </script>
